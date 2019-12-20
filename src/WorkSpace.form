@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="WorkSpace">
+  <grid id="27dc6" binding="Panel_root" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="15" y="9" width="670" height="530"/>
+    </constraints>
+    <properties>
+      <maximumSize width="1000" height="700"/>
+      <minimumSize width="254" height="254"/>
+      <preferredSize width="900" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="3595e" binding="Panel_operation" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="235" height="38"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1cbc" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="95" height="30"/>
+                <maximum-size width="120" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <model>
+                <item value="OpenFile_Ctrl+O"/>
+                <item value="SaveAs_Ctrl+S"/>
+                <item value="Generate_Ctrl+G"/>
+              </model>
+              <name value="FileOperation"/>
+              <opaque value="true"/>
+              <popupVisible value="false"/>
+              <selectedIndex value="-1"/>
+              <toolTipText value="FileOperation"/>
+            </properties>
+          </component>
+          <component id="ed9eb" class="javax.swing.JButton" binding="helpButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Help"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="95e41" class="javax.swing.JTextPane" binding="textPane1" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="4" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="800" height="500"/>
+            <maximum-size width="-1" height="550"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-6250346"/>
+          <caretColor color="-8406148"/>
+          <contentType value="text/plain"/>
+          <dragEnabled value="true"/>
+          <editable value="false"/>
+          <foreground color="-5719129"/>
+          <margin top="3" left="30" bottom="30" right="30"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <grid id="31cc6" binding="Panel_tool" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="30" height="-1"/>
+            <preferred-size width="50" height="450"/>
+            <maximum-size width="50" height="500"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d150" class="javax.swing.JButton" binding="button_zoom_in">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="77"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <icon value="icon_zoom_in.jpg"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <maximumSize width="78" height="46"/>
+              <minimumSize width="78" height="46"/>
+              <preferredSize width="45" height="45"/>
+              <text value=""/>
+              <toolTipText value="Zoom_in"/>
+            </properties>
+          </component>
+          <component id="93a3e" class="javax.swing.JButton" binding="button_zoom_out">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="66"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <icon value="icon_zoom_out.jpg"/>
+              <iconTextGap value="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <maximumSize width="78" height="46"/>
+              <minimumSize width="78" height="46"/>
+              <preferredSize width="45" height="45"/>
+              <text value=""/>
+              <toolTipText value="Zoom_out"/>
+            </properties>
+          </component>
+          <component id="f3fce" class="javax.swing.JButton" binding="button_right">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="40"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <icon value="icon_right.jpg"/>
+              <iconTextGap value="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <text value=""/>
+              <toolTipText value="Right_90"/>
+            </properties>
+          </component>
+          <component id="a9c8b" class="javax.swing.JButton" binding="button_left">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="40"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="11"/>
+              <icon value="icon_left.jpg"/>
+              <iconTextGap value="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <text value=""/>
+              <toolTipText value="Left_90"/>
+            </properties>
+          </component>
+          <component id="c6b9a" class="javax.swing.JButton" binding="button_canny">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="40"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="11"/>
+              <icon value="icon_canny.jpg"/>
+              <iconTextGap value="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <text value=""/>
+              <toolTipText value="Canny"/>
+            </properties>
+          </component>
+          <component id="82cd9" class="javax.swing.JButton" binding="botton_brightness">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="40"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="11"/>
+              <icon value="icon_brightness.jpg"/>
+              <iconTextGap value="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <text value=""/>
+              <toolTipText value="Brightness"/>
+            </properties>
+          </component>
+          <component id="d7a9b" class="javax.swing.JButton" binding="botton_facedetec">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="40"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="11"/>
+              <icon value="icon_facedetec.jpg"/>
+              <iconTextGap value="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <text value=""/>
+              <toolTipText value="Face_Detect"/>
+            </properties>
+          </component>
+          <component id="5765d" class="javax.swing.JButton" binding="botton_smiledetec">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="40" height="40"/>
+                <maximum-size width="45" height="45"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="11"/>
+              <icon value="icon_cat.jpg"/>
+              <iconTextGap value="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <text value=""/>
+              <toolTipText value="Cat_Face_Detect"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="fc104" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="45" height="38"/>
+          </grid>
+        </constraints>
+        <properties>
+          <icon value="icon_4.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="35c1" class="javax.swing.JTextPane" binding="textPane2" default-binding="true">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+            <preferred-size width="400" height="38"/>
+            <maximum-size width="500" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-3488566"/>
+          <caretColor color="-8406148"/>
+          <editable value="false"/>
+          <margin top="0" left="50" bottom="0" right="0"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
